@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clínica Saúde & Vida</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="img/ícon.jpg" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Quem Somos</a></li>
+        <li><a href="#services">Serviços</a></li>
+        <li><a href="#health-tips">Dicas de Saúde</a></li>
+        <li><a href="#contact">Contato</a></li>
+        <li><a href="#location">Localização</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="welcome">
+      <h1>Bem-vindo à Clínica Saúde & Vida</h1>
+      <p>Na Clínica Saúde & Vida, sua saúde é nossa prioridade. Oferecemos atendimento médico de qualidade com uma
+        equipe de profissionais altamente qualificados e dedicados ao seu bem-estar. Navegue pelo nosso site para
+        conhecer nossos serviços e obter dicas de saúde.</p>
+    </section>
+
+    <section id="about">
+      <h2>Sobre Nós</h2>
+      <p>A Clínica Saúde & Vida foi fundada em [ano] com o objetivo de proporcionar atendimento médico de excelência.
+        Nossa equipe é composta por médicos especializados, enfermeiros e outros profissionais de saúde comprometidos
+        com a sua qualidade de vida. Nosso foco é oferecer um atendimento humanizado, personalizado e eficiente, sempre
+        buscando a satisfação e a recuperação dos nossos pacientes.</p>
+    </section>
+
+    <section id="services">
+      <h2>Nossos Serviços</h2>
+      <ul>
+        <li>Consultas Médicas: Atendimento com médicos especialistas em diversas áreas.</li>
+        <li>Exames de Imagem: Ultrassonografia, radiologia, tomografia e ressonância magnética.</li>
+        <li>Laboratório de Análises Clínicas: Exames de sangue, urina e outros.</li>
+        <li>Vacinação: Vacinas para todas as idades.</li>
+        <li>Fisioterapia: Tratamentos para reabilitação física e motora.</li>
+        <li>Atendimento de Urgência: Pronto atendimento para emergências médicas.</li>
+      </ul>
+    </section>
+
+    <section id="health-tips">
+      <h2>Dicas de Saúde</h2>
+      <ul>
+        <li>Alimentação Balanceada: Consuma alimentos ricos em nutrientes e evite excessos.</li>
+        <li>Exercícios Físicos: Pratique atividades físicas regularmente para manter o corpo em forma.</li>
+        <li>Hidratação: Beba bastante água ao longo do dia.</li>
+        <li>Sono de Qualidade: Durma de 7 a 8 horas por noite para garantir um bom descanso.</li>
+        <li>Visitas Regulares ao Médico: Realize check-ups periódicos para monitorar sua saúde.</li>
+      </ul>
+    </section>
+  </main>
+
+  <main>
+    <section id="contact">
+      <h1>Entre em Contato Conosco</h1>
+      <p>Tem alguma dúvida ou quer agendar uma consulta? Estamos à disposição para ajudá-lo.</p>
+      <p><strong>Telefone:</strong> (69) 1234-5678</p>
+      <p><strong>E-mail:</strong> <a href="mailto:contato@saudeevida.com">contato@saudeevida.com</a></p>
+    </section>
+
+    <section id="contact-form">
+      <h2>Formulário de Contato</h2>
+      <form action="enviar-contato.php" method="post">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Telefone:</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <section id="location">
+      <h2>Onde Estamos</h2>
+      <p>A Clínica Saúde & Vida está localizada em um ponto de fácil acesso para sua comodidade. Venha nos visitar!</p>
+      <p><strong>Endereço:</strong> Rua dos Exemplos, 123 - Bairro Central<br>
+        Cidade, Estado, CEP: 12345-678</p>
+      <div id="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.247475853429!2d-61.95121232507836!3d-10.868772489285618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93c99b3cfd76f8e5%3A0xc292650abc70c172!2sHM%20-%20Hospital%20Municipal%20de%20Ji-Paran%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1722041308795!5m2!1spt-BR!2sbr"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          eferrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Clínica Saúde & Vida. Todos os direitos reservados.</p>
+  </footer>
+</body>
+
+</html>
