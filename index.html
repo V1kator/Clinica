@@ -5,31 +5,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clínica Saúde & Vida</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="img/ícon.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="assets/style/reset.css">
+  <link rel="stylesheet" href="assets/style/styles.css">
+  <link rel="icon" href="assets/img/ícon.jpg" type="image/x-icon">
 </head>
 
 <body>
   <header>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">Quem Somos</a></li>
-        <li><a href="#services">Serviços</a></li>
-        <li><a href="#health-tips">Dicas de Saúde</a></li>
-        <li><a href="#contact">Contato</a></li>
-        <li><a href="#location">Localização</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <div class="logo">
+        <h1>Nome da Clínica</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Quem Somos</a></li>
+          <li><a href="#services">Serviços</a></li>
+          <li><a href="#contact">Contato</a></li>
+          <li><a href="#location">Localização</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-
+  
   <main>
     <section id="welcome">
-      <h1>Bem-vindo à Clínica Saúde & Vida</h1>
-      <p>Na Clínica Saúde & Vida, sua saúde é nossa prioridade. Oferecemos atendimento médico de qualidade com uma
-        equipe de profissionais altamente qualificados e dedicados ao seu bem-estar. Navegue pelo nosso site para
-        conhecer nossos serviços e obter dicas de saúde.</p>
+      <div class="overlay">
+        <h1>Bem-vindo à Clínica Saúde & Vida</h1>
+        <p>Na Clínica Saúde & Vida, sua saúde é nossa prioridade. Oferecemos atendimento médico de qualidade com uma equipe de profissionais altamente qualificados e dedicados ao seu bem-estar.</p>
+      </div>
     </section>
+    
 
     <section id="about">
       <h2>Sobre Nós</h2>
@@ -105,9 +111,16 @@
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2024 Clínica Saúde & Vida. Todos os direitos reservados.</p>
+  <footer >
+    <div class="footer-info">
+      <p><strong>Contato:</strong> (69) 1234-5678 | <strong>E-mail:</strong> <a href="mailto:contato@saudeevida.com" class="no-style">contato@saudeevida.com</a></p>
+      <p><strong>Endereço:</strong> Rua dos Exemplos, 1232 - Bairro Central, Ji-Paraná, Rondônia, CEP: 12345-678</p>
+    </div>
+    <div class="footer-rights">
+      <p>&copy; 2024 Clínica Saúde & Vida. Todos os direitos reservados.</p>
+    </div>
   </footer>
+  
 </body>
 
 </html>
