@@ -7,78 +7,123 @@
   <title>Clínica Saúde & Vida</title>
   <link rel="stylesheet" href="assets/style/reset.css">
   <link rel="stylesheet" href="assets/style/styles.css">
-  <link rel="icon" href="assets/img/ícon.jpg" type="image/x-icon">
+  <link rel="icon" href="assets/img/icon.jpg" type="image/x-icon">
 </head>
 
 <body>
   <header>
-    <div class="container">
+    <nav class="nav-bar">
       <div class="logo">
-        <h1>Nome da Clínica</h1>
+        <a href="#home" class="nav-link">Clínica Saúde & Vida</a>
       </div>
-      <nav>
+      <div class="nav-list">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">Quem Somos</a></li>
-          <li><a href="#services">Serviços</a></li>
-          <li><a href="#contact">Contato</a></li>
-          <li><a href="#location">Localização</a></li>
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Início</a>
+          </li>
+          <li class="nav-item">
+            <a href="#sobrenos" class="nav-link">Sobre Nós</a>
+          </li>
+          <li class="nav-item">
+            <a href="#servicos" class="nav-link">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contato" class="nav-link">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a href="#location" class="nav-link">Localização</a>
+          </li>
         </ul>
-      </nav>
+      </div>
+
+      <div class="mobile-menu-icon">
+        <button onclick="menuShow()">
+          <img class="icon" src="assets/img/icons/menu.svg" alt="Menu" />
+        </button>
+      </div>
+    </nav>
+    <div class="mobile-menu">
+      <ul>
+        <li class="nav-item"><a href="#home" class="nav-link">Início</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">Sobre Nós</a></li>
+        <li class="nav-item"><a href="#services" class="nav-link">Serviços</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contato</a></li>
+      </ul>
     </div>
   </header>
-  
+
   <main>
     <section id="welcome">
-      <div class="overlay">
-        <h1>Bem-vindo à Clínica Saúde & Vida</h1>
-        <p>Na Clínica Saúde & Vida, sua saúde é nossa prioridade. Oferecemos atendimento médico de qualidade com uma equipe de profissionais altamente qualificados e dedicados ao seu bem-estar.</p>
+      <div class="container-flex-home">
+        <button id="btn-topo">
+          <img
+            src="/assets/img/icons/upbnt.svg"
+            alt="Para o topo"
+          />
+        </button>
+
+        <h1 class="sub-title">Bem-vindo à Clínica Saúde & Vida</h1>
+        <p class="text-normal">Na Clínica Saúde & Vida, cuidamos da sua saúde com dedicação e excelência. Nossa equipe de especialistas está aqui para oferecer atendimento médico personalizado, garantindo que você receba os melhores cuidados para seu bem-estar.</p>
+        <a class="button-home" href="#servicos">Conheça Nossos Serviços</a>
       </div>
     </section>
     
-
-    <section id="about">
-      <h2>Sobre Nós</h2>
-      <p>A Clínica Saúde & Vida foi fundada em [ano] com o objetivo de proporcionar atendimento médico de excelência.
-        Nossa equipe é composta por médicos especializados, enfermeiros e outros profissionais de saúde comprometidos
-        com a sua qualidade de vida. Nosso foco é oferecer um atendimento humanizado, personalizado e eficiente, sempre
-        buscando a satisfação e a recuperação dos nossos pacientes.</p>
+    <section id="about" class="container-flex container-flex-tamanho body-azul">
+      <div class="container-separacao">
+        <div class="img_flexbox img">
+          <img src="assets/img/doctor.jpg" alt="Equipe Médica" />
+        </div>
+      </div>
+      <div>
+        <h1 class="title-bigblue">Sobre Nós</h1>
+        <p class="text-normal">A Clínica Saúde & Vida foi fundada em 2002 com o compromisso de oferecer cuidados médicos de alta qualidade. Nossa equipe é composta por médicos especializados e outros profissionais de saúde, todos empenhados em promover sua saúde e bem-estar. Trabalhamos com um modelo de atendimento humanizado, personalizado e eficiente, focado na recuperação e satisfação de nossos pacientes.</p>
+      </div>
     </section>
 
-    <section id="services">
-      <h2>Nossos Serviços</h2>
-      <ul>
-        <li>Consultas Médicas: Atendimento com médicos especialistas em diversas áreas.</li>
-        <li>Exames de Imagem: Ultrassonografia, radiologia, tomografia e ressonância magnética.</li>
-        <li>Laboratório de Análises Clínicas: Exames de sangue, urina e outros.</li>
-        <li>Vacinação: Vacinas para todas as idades.</li>
-        <li>Fisioterapia: Tratamentos para reabilitação física e motora.</li>
-        <li>Atendimento de Urgência: Pronto atendimento para emergências médicas.</li>
-      </ul>
+    <section id="servicos" class="container-servicos">
+      <h1 class="title-bigblue">Nossos Serviços</h1>
+      <p class="text-contato">Na Clínica Saúde & Vida, oferecemos uma ampla gama de serviços para atender às suas necessidades de saúde:</p>
+      <div class="container-servicos-flex">
+        <div class="placa">
+          <div class="dentro-placa1">
+            <h3 class="title-lilblack">Consultas Médicas</h3>
+            <p class="texto-menor">Consultas com especialistas em diversas áreas da medicina, garantindo diagnóstico preciso e tratamento adequado.</p>
+          </div>
+        </div>
+        <div class="placa">
+          <div class="dentro-placa2">
+            <h3 class="title-lilblack">Atendimento de Urgência</h3>
+            <p class="texto-menor">Pronto atendimento para emergências médicas, com equipe preparada para cuidar de você em momentos críticos.</p>
+          </div>
+        </div>
+        <div class="placa">
+          <div class="dentro-placa2">
+            <h3 class="title-lilblack">Fisioterapia</h3>
+            <p class="texto-menor">Tratamentos de reabilitação física e motora, ajudando na recuperação de lesões e na melhoria da qualidade de vida.</p>
+          </div>
+        </div>
+        <div class="placa">
+          <div class="dentro-placa2">
+            <h3 class="title-lilblack">Laboratório de Análises Clínicas</h3>
+            <p class="texto-menor">Realizamos exames de sangue, urina e outros testes laboratoriais para um diagnóstico preciso e confiável.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="health-tips">
       <h2>Dicas de Saúde</h2>
       <ul>
-        <li>Alimentação Balanceada: Consuma alimentos ricos em nutrientes e evite excessos.</li>
-        <li>Exercícios Físicos: Pratique atividades físicas regularmente para manter o corpo em forma.</li>
-        <li>Hidratação: Beba bastante água ao longo do dia.</li>
-        <li>Sono de Qualidade: Durma de 7 a 8 horas por noite para garantir um bom descanso.</li>
-        <li>Visitas Regulares ao Médico: Realize check-ups periódicos para monitorar sua saúde.</li>
+        <li>Alimentação Balanceada: Consuma uma dieta rica em nutrientes para manter sua saúde em dia.</li>
+        <li>Exercícios Físicos: A prática regular de atividades físicas é essencial para o bem-estar.</li>
+        <li>Hidratação: Mantenha-se hidratado bebendo água regularmente ao longo do dia.</li>
+        <li>Sono de Qualidade: Durma entre 7 a 8 horas por noite para garantir um bom descanso e recuperação do corpo.</li>
+        <li>Visitas Regulares ao Médico: Realize check-ups periódicos para monitorar sua saúde e prevenir doenças.</li>
       </ul>
-    </section>
-  </main>
-
-  <main>
-    <section id="contact">
-      <h1>Entre em Contato Conosco</h1>
-      <p>Tem alguma dúvida ou quer agendar uma consulta? Estamos à disposição para ajudá-lo.</p>
-      <p><strong>Telefone:</strong> (69) 1234-5678</p>
-      <p><strong>E-mail:</strong> <a href="mailto:contato@saudeevida.com">contato@saudeevida.com</a></p>
     </section>
 
     <section id="contact-form">
-      <h2>Formulário de Contato</h2>
+      <h2>Entre em Contato</h2>
       <form action="enviar-contato.php" method="post">
         <label for="name">Nome:</label>
         <input type="text" id="name" name="name" required>
@@ -98,29 +143,27 @@
 
     <section id="location">
       <h2>Onde Estamos</h2>
-      <p>A Clínica Saúde & Vida está localizada em um ponto de fácil acesso para sua comodidade. Venha nos visitar!</p>
-      <p><strong>Endereço:</strong> Rua dos Exemplos, 123 - Bairro Central<br>
-        Cidade, Estado, CEP: 12345-678</p>
+      <p>Estamos localizados em um ponto estratégico para melhor atender você. Venha nos visitar e conheça nossa clínica.</p>
+      <p><strong>Endereço:</strong> Rua dos Exemplos, 123 - Bairro Central<br>Cidade, Estado, CEP: 12345-678</p>
       <div id="map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.247475853429!2d-61.95121232507836!3d-10.868772489285618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93c99b3cfd76f8e5%3A0xc292650abc70c172!2sHM%20-%20Hospital%20Municipal%20de%20Ji-Paran%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1722041308795!5m2!1spt-BR!2sbr"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          eferrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.247475853429!2d-61.95121232507836!3d-10.868772489285618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93c99b3cfd76f8e5%3A0xc292650abc70c172!2sHM%20-%20Hospital%20Municipal%20de%20Ji-Paran%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1722041308795!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
   </main>
 
-  <footer >
-    <div class="footer-info">
-      <p><strong>Contato:</strong> (69) 1234-5678 | <strong>E-mail:</strong> <a href="mailto:contato@saudeevida.com" class="no-style">contato@saudeevida.com</a></p>
-      <p><strong>Endereço:</strong> Rua dos Exemplos, 1232 - Bairro Central, Ji-Paraná, Rondônia, CEP: 12345-678</p>
+  <footer>
+    <div class="footer">
+      <h1 class="footer-titulo">Clínica Saúde & Vida</h1>
+      <p class="footer-text">©2023 Clínica Saúde & Vida. Todos os direitos reservados.</p>
     </div>
-    <div class="footer-rights">
-      <p>&copy; 2024 Clínica Saúde & Vida. Todos os direitos reservados.</p>
+    <div class="footer">
+      <img src="templates/assets/imagens/icons/mail-branco.svg" alt="Email" />
+      <img src="templates/assets/imagens/icons/whatsapp-branco.svg" alt="Telefone" />
     </div>
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/upbnt.js"></script>
   </footer>
-  
 </body>
 
 </html>
