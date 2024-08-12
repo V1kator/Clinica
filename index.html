@@ -7,7 +7,7 @@
   <title>Clínica Saúde & Vida</title>
   <link rel="stylesheet" href="assets/style/reset.css">
   <link rel="stylesheet" href="assets/style/styles.css">
-  <link rel="icon" href="assets/img/icon.jpg" type="image/x-icon">
+  <link rel="icon" href="assets/img/ícon.jpg" type="image/x-icon">
 </head>
 
 <body>
@@ -111,20 +111,41 @@
       </div>
     </section>
 
-    <section id="health-tips">
-      <h2>Dicas de Saúde</h2>
-      <ul>
-        <li>Alimentação Balanceada: Consuma uma dieta rica em nutrientes para manter sua saúde em dia.</li>
-        <li>Exercícios Físicos: A prática regular de atividades físicas é essencial para o bem-estar.</li>
-        <li>Hidratação: Mantenha-se hidratado bebendo água regularmente ao longo do dia.</li>
-        <li>Sono de Qualidade: Durma entre 7 a 8 horas por noite para garantir um bom descanso e recuperação do corpo.</li>
-        <li>Visitas Regulares ao Médico: Realize check-ups periódicos para monitorar sua saúde e prevenir doenças.</li>
-      </ul>
+
+    <section id="dicas" class="container-dicas">
+      <h1 class="title-bigblue">Dicas de Saúde</h1>
+      <p class="text-contato">Dicas de Saúde da Clinica Saúde & Vida, para uma vida mais saudável:</p>
+      <div class="container-dicas-flex">
+        <div class="placa">
+          <div class="dentro-placa1">
+            <h3 class="title-lilblack">Alimentação Balanceada:</h3>
+            <p class="texto-menor">Consuma uma dieta rica em nutrientes para manter sua saúde em dia.</p>
+          </div>
+        </div>
+        <div class="placa">
+          <div class="dentro-placa2">
+            <h3 class="title-lilblack">Exercícios Físicos:</h3>
+            <p class="texto-menor">A prática regular de atividades físicas é essencial para o bem-estar.</p>
+          </div>
+        </div>
+        <div class="placa">
+          <div class="dentro-placa2">
+            <h3 class="title-lilblack">Sono de Qualidade:</h3>
+            <p class="texto-menor">Durma entre 7 a 8 horas por noite para garantir um bom descanso e recuperação do corpo.</p>
+          </div>
+        </div>
+        <div class="placa">
+          <div class="dentro-placa2">
+            <h3 class="title-lilblack">Hidratação:</h3>
+            <p class="texto-menor">Mantenha-se hidratado bebendo água regularmente ao longo do dia.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="contact-form">
-      <h2>Entre em Contato</h2>
-      <form action="enviar-contato.php" method="post">
+      <h1 class="title-bigblue">Entre em Contato</h1>
+      <form>
         <label for="name">Nome:</label>
         <input type="text" id="name" name="name" required>
 
@@ -137,14 +158,15 @@
         <label for="message">Mensagem:</label>
         <textarea id="message" name="message" required></textarea>
 
-        <button type="submit">Enviar</button>
+        <button>Enviar</button>
       </form>
     </section>
 
     <section id="location">
-      <h2>Onde Estamos</h2>
-      <p>Estamos localizados em um ponto estratégico para melhor atender você. Venha nos visitar e conheça nossa clínica.</p>
-      <p><strong>Endereço:</strong> Rua dos Exemplos, 123 - Bairro Central<br>Cidade, Estado, CEP: 12345-678</p>
+      <h1 class="title-bigblue">Onde Estamos</h1>
+      <p class="texto-menor">Estamos localizados em um ponto estratégico para melhor atender você. Venha nos visitar e conheça nossa clínica.</p>
+      <p class="texto-menor">Endereço: Rua dos Exemplos, 123 - Bairro Central
+        <br>Cidade, Estado, CEP: 12345-678</p>
       <div id="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.247475853429!2d-61.95121232507836!3d-10.868772489285618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93c99b3cfd76f8e5%3A0xc292650abc70c172!2sHM%20-%20Hospital%20Municipal%20de%20Ji-Paran%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1722041308795!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
@@ -154,7 +176,7 @@
   <footer>
     <div class="footer">
       <h1 class="footer-titulo">Clínica Saúde & Vida</h1>
-      <p class="footer-text">©2023 Clínica Saúde & Vida. Todos os direitos reservados.</p>
+      <p class="footer-text">©2024 Clínica Saúde & Vida. Todos os direitos reservados.</p>
     </div>
     <div class="footer">
       <img src="templates/assets/imagens/icons/mail-branco.svg" alt="Email" />
