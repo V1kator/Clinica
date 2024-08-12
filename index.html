@@ -1,191 +1,340 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clínica Saúde & Vida</title>
-  <link rel="stylesheet" href="assets/style/reset.css">
-  <link rel="stylesheet" href="assets/style/styles.css">
-  <link rel="icon" href="assets/img/ícon.jpg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Saúde & Vida</title>
+    <link rel="stylesheet" href="assets/style/styles.css">
 </head>
 
 <body>
   <header>
-    <nav class="nav-bar">
-      <div class="logo">
-        <a href="#home" class="nav-link">Clínica Saúde & Vida</a>
-      </div>
-      <div class="nav-list">
-        <ul>
-          <li class="nav-item">
-            <a href="#home" class="nav-link">Início</a>
-          </li>
-          <li class="nav-item">
-            <a href="#sobrenos" class="nav-link">Sobre Nós</a>
-          </li>
-          <li class="nav-item">
-            <a href="#servicos" class="nav-link">Serviços</a>
-          </li>
-          <li class="nav-item">
-            <a href="#contato" class="nav-link">Contato</a>
-          </li>
-          <li class="nav-item">
-            <a href="#location" class="nav-link">Localização</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="mobile-menu-icon">
-        <button onclick="menuShow()">
-          <img class="icon" src="assets/img/icons/menu.svg" alt="Menu" />
-        </button>
-      </div>
-    </nav>
-    <div class="mobile-menu">
-      <ul>
-        <li class="nav-item"><a href="#home" class="nav-link">Início</a></li>
-        <li class="nav-item"><a href="#about" class="nav-link">Sobre Nós</a></li>
-        <li class="nav-item"><a href="#services" class="nav-link">Serviços</a></li>
-        <li class="nav-item"><a href="#contact" class="nav-link">Contato</a></li>
-      </ul>
-    </div>
+      <div class="logo">Clínica Saúde & Vida</div>
+      <nav>
+          <a href="#">Início</a>
+          <a href="#">Serviços</a>
+          <a href="#">Preços</a>
+          <a href="#">Contato</a>
+      </nav>
   </header>
 
-  <main>
-    <section id="welcome">
-      <div class="container-flex-home">
-        <button id="btn-topo">
-          <img
-            src="/assets/img/icons/upbnt.svg"
-            alt="Para o topo"
-          />
-        </button>
-
-        <h1 class="sub-title">Bem-vindo à Clínica Saúde & Vida</h1>
-        <p class="text-normal">Na Clínica Saúde & Vida, cuidamos da sua saúde com dedicação e excelência. Nossa equipe de especialistas está aqui para oferecer atendimento médico personalizado, garantindo que você receba os melhores cuidados para seu bem-estar.</p>
-        <a class="button-home" href="#servicos">Conheça Nossos Serviços</a>
+  <section class="main-section">
+      <div class="content">
+          <h1>Agende sua Consulta Online</h1>
+          <p>Na Clínica Saúde & Vida, estamos comprometidos em cuidar de você e da sua família, oferecendo atendimento médico de qualidade para todas as suas necessidades.</p>
+          <div class="buttons">
+              <a href="#" class="quote">Solicitar Orçamento</a>
+              <a href="#" class="learn">Saiba Mais</a>
+          </div>
       </div>
-    </section>
-    
-    <section id="about" class="container-flex container-flex-tamanho body-azul">
-      <div class="container-separacao">
-        <div class="img_flexbox img">
-          <img src="assets/img/doctor.jpg" alt="Equipe Médica" />
-        </div>
+      <div class="image">
+          <img src="assets/img/doutoraFeliz.svg" alt="Doutora sorrindo">
+          <div class="chart">
+              <img src="assets/img/grafico.svg" alt="Gráfico de saúde">
+          </div>
       </div>
-      <div>
-        <h1 class="title-bigblue">Sobre Nós</h1>
-        <p class="text-normal">A Clínica Saúde & Vida foi fundada em 2002 com o compromisso de oferecer cuidados médicos de alta qualidade. Nossa equipe é composta por médicos especializados e outros profissionais de saúde, todos empenhados em promover sua saúde e bem-estar. Trabalhamos com um modelo de atendimento humanizado, personalizado e eficiente, focado na recuperação e satisfação de nossos pacientes.</p>
-      </div>
-    </section>
+  </section>
 
-    <section id="servicos" class="container-servicos">
-      <h1 class="title-bigblue">Nossos Serviços</h1>
-      <p class="text-contato">Na Clínica Saúde & Vida, oferecemos uma ampla gama de serviços para atender às suas necessidades de saúde:</p>
-      <div class="container-servicos-flex">
-        <div class="placa">
-          <div class="dentro-placa1">
-            <h3 class="title-lilblack">Consultas Médicas</h3>
-            <p class="texto-menor">Consultas com especialistas em diversas áreas da medicina, garantindo diagnóstico preciso e tratamento adequado.</p>
-          </div>
+  <section class="activity-section">
+    <h2>Áreas de Atuação</h2>
+    <p>Estamos aqui para oferecer um cuidado integral, abrangendo desde atendimentos de urgência até consultas regulares e procedimentos avançados.</p>
+    <div class="cards">
+        <div class="card">
+            <img src="assets/img/emergencia.svg" alt="Ícone de emergência">
+            <h3>Atendimentos de Emergência</h3>
+            <div class="underline"></div>
+            <p>Estamos prontos para atendê-lo em casos de emergência, com uma equipe especializada disponível 24 horas por dia.</p>
         </div>
-        <div class="placa">
-          <div class="dentro-placa2">
-            <h3 class="title-lilblack">Atendimento de Urgência</h3>
-            <p class="texto-menor">Pronto atendimento para emergências médicas, com equipe preparada para cuidar de você em momentos críticos.</p>
-          </div>
+        <div class="card">
+            <img src="assets/img/consulta.svg" alt="Ícone de saúde">
+            <h3>Consultas Médicas</h3>
+            <div class="underline"></div>
+            <p>Oferecemos consultas em diversas especialidades para garantir que você receba o melhor atendimento possível.</p>
         </div>
-        <div class="placa">
-          <div class="dentro-placa2">
-            <h3 class="title-lilblack">Fisioterapia</h3>
-            <p class="texto-menor">Tratamentos de reabilitação física e motora, ajudando na recuperação de lesões e na melhoria da qualidade de vida.</p>
-          </div>
+        <div class="card">
+            <img src="assets/img/procedimento.svg" alt="Ícone de procedimentos">
+            <h3>Procedimentos Sem Dor</h3>
+            <div class="underline"></div>
+            <p>Realizamos procedimentos minimamente invasivos, garantindo conforto e segurança para nossos pacientes.</p>
         </div>
-        <div class="placa">
-          <div class="dentro-placa2">
-            <h3 class="title-lilblack">Laboratório de Análises Clínicas</h3>
-            <p class="texto-menor">Realizamos exames de sangue, urina e outros testes laboratoriais para um diagnóstico preciso e confiável.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section id="dicas" class="container-dicas">
-      <h1 class="title-bigblue">Dicas de Saúde</h1>
-      <p class="text-contato">Dicas de Saúde da Clinica Saúde & Vida, para uma vida mais saudável:</p>
-      <div class="container-dicas-flex">
-        <div class="placa">
-          <div class="dentro-placa1">
-            <h3 class="title-lilblack">Alimentação Balanceada:</h3>
-            <p class="texto-menor">Consuma uma dieta rica em nutrientes para manter sua saúde em dia.</p>
-          </div>
-        </div>
-        <div class="placa">
-          <div class="dentro-placa2">
-            <h3 class="title-lilblack">Exercícios Físicos:</h3>
-            <p class="texto-menor">A prática regular de atividades físicas é essencial para o bem-estar.</p>
-          </div>
-        </div>
-        <div class="placa">
-          <div class="dentro-placa2">
-            <h3 class="title-lilblack">Sono de Qualidade:</h3>
-            <p class="texto-menor">Durma entre 7 a 8 horas por noite para garantir um bom descanso e recuperação do corpo.</p>
-          </div>
-        </div>
-        <div class="placa">
-          <div class="dentro-placa2">
-            <h3 class="title-lilblack">Hidratação:</h3>
-            <p class="texto-menor">Mantenha-se hidratado bebendo água regularmente ao longo do dia.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact-form">
-      <h1 class="title-bigblue">Entre em Contato</h1>
-      <form>
-        <label for="name">Nome:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="phone">Telefone:</label>
-        <input type="tel" id="phone" name="phone">
-
-        <label for="message">Mensagem:</label>
-        <textarea id="message" name="message" required></textarea>
-
-        <button>Enviar</button>
-      </form>
-    </section>
-
-    <section id="location">
-      <h1 class="title-bigblue">Onde Estamos</h1>
-      <p class="texto-menor">Estamos localizados em um ponto estratégico para melhor atender você. Venha nos visitar e conheça nossa clínica.</p>
-      <p class="texto-menor">Endereço: Rua dos Exemplos, 123 - Bairro Central
-        <br>Cidade, Estado, CEP: 12345-678</p>
-      <div id="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.247475853429!2d-61.95121232507836!3d-10.868772489285618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93c99b3cfd76f8e5%3A0xc292650abc70c172!2sHM%20-%20Hospital%20Municipal%20de%20Ji-Paran%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1722041308795!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer">
-      <h1 class="footer-titulo">Clínica Saúde & Vida</h1>
-      <p class="footer-text">©2024 Clínica Saúde & Vida. Todos os direitos reservados.</p>
     </div>
-    <div class="footer">
-      <img src="templates/assets/imagens/icons/mail-branco.svg" alt="Email" />
-      <img src="templates/assets/imagens/icons/whatsapp-branco.svg" alt="Telefone" />
-    </div>
+  </section>
 
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/upbnt.js"></script>
-  </footer>
+<section class="leading-medicine-section">
+  <div class="text-content">
+      <div class="underline"></div>
+      <h2>Tecnologia de Ponta</h2>
+      <p>Utilizamos o que há de mais avançado na medicina para oferecer tratamentos eficientes e resultados de excelência.</p>
+      <a href="#" class="learn-more">Saiba Mais</a>
+  </div>
+  <div class="">
+      <img src="assets/img/thumb-concept-7.svg" alt="Laboratório de Análises Clínicas" class="main-image">
+  </div>
+</section>
+
+<section class="specialization-section">
+  <div class="header-content">
+      <h2>Especialistas Dedicados a Você</h2>
+      <p>Nossa equipe médica é composta por profissionais altamente qualificados, prontos para oferecer um atendimento personalizado e humanizado.</p>
+  </div>
+  <div class="cards-container">
+      <div class="card">
+          <div class="image-container">
+              <img src="assets/img/doutor1.svg" alt="Doutor em operação">
+              <span class="badge">Promoção</span>
+              <div class="actions">
+                  <button>❤</button>
+                  <button>🛒</button>
+                  <button>👁️</button>
+              </div>
+          </div>
+          <div class="card-content">
+              <span class="department">Cardiologia</span>
+              <span class="rating">★ 4.9</span>
+              <h3>Exames e Procedimentos Cardíacos</h3>
+              <p>Estamos comprometidos em cuidar da sua saúde cardíaca com a máxima dedicação e tecnologia.</p>
+              <div class="sales-info">
+                  <span>15 Procedimentos</span>
+                  <span class="price">R$ 1.648 <strong>R$ 1.248</strong></span>
+              </div>
+              <div class="additional-info">
+                  <span>22h 30min</span>
+                  <span>Consulta + Exame</span>
+                  <span>Progresso</span>
+              </div>
+              <a href="#" class="learn-more">Saiba Mais</a>
+          </div>
+      </div>
+
+      <div class="card">
+          <div class="image-container">
+              <img src="assets/img/doutora2.svg" alt="Doutora em operação">
+              <span class="badge">Promoção</span>
+              <div class="actions">
+                  <button>❤</button>
+                  <button>🛒</button>
+                  <button>👁️</button>
+              </div>
+          </div>
+          <div class="card-content">
+              <span class="department">Dermatologia</span>
+              <span class="rating">★ 4.9</span>
+              <h3>Tratamentos Estéticos e Clínicos</h3>
+              <p>Cuidamos da saúde e beleza da sua pele com os melhores tratamentos dermatológicos.</p>
+              <div class="sales-info">
+                  <span>20 Procedimentos</span>
+                  <span class="price">R$ 1.248 <strong>R$ 948</strong></span>
+              </div>
+              <div class="additional-info">
+                  <span>15h 00min</span>
+                  <span>Consulta + Tratamento</span>
+                  <span>Progresso</span>
+              </div>
+              <a href="#" class="learn-more">Saiba Mais</a>
+          </div>
+      </div>
+
+      <div class="card">
+          <div class="image-container">
+              <img src="assets/img/equipamento_medico.svg" alt="Equipamento médico">
+              <span class="badge">Promoção</span>
+              <div class="actions">
+                  <button>❤</button>
+                  <button>🛒</button>
+                  <button>👁️</button>
+              </div>
+          </div>
+          <div class="card-content">
+              <span class="department">Ortopedia</span>
+              <span class="rating">★ 4.9</span>
+              <h3>Cuidados com Ossos e Articulações</h3>
+              <p>Oferecemos diagnósticos precisos e tratamentos eficazes para problemas ortopédicos.</p>
+              <div class="sales-info">
+                  <span>30 Procedimentos</span>
+                  <span class="price">R$ 2.048 <strong>R$ 1.748</strong></span>
+              </div>
+              <div class="additional-info">
+                  <span>30h 00min</span>
+                  <span>Consulta + Tratamento</span>
+                  <span>Progresso</span>
+              </div>
+              <a href="#" class="learn-more">Saiba Mais</a>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="pricing-section">
+  <div class="header-content">
+      <h2>Planos e Preços</h2>
+      <p>Escolha o plano que melhor se adapta às suas necessidades e conte com nossos serviços médicos de excelência.</p>
+  </div>
+  <div class="pricing-cards">
+      <div class="card">
+          <div class="card-header">
+              <img src="assets/img/coracao.svg" alt="Icone de coração">
+              <h3>Básico</h3>
+          </div>
+          <div class="card-body">
+              <p>Consultas e exames básicos para o seu dia a dia.</p>
+              <h4>R$ 199</h4>
+              <span>Por Mês</span>
+              <p>Um plano essencial para quem busca cuidados médicos regulares.</p>
+              <a href="#" class="btn">Assine Agora</a>
+              <ul class="features">
+                  <li><span>✔️</span> Consultas ilimitadas</li>
+                  <li><span>✔️</span> Exames de rotina</li>
+                  <li><span>✔️</span> Descontos em procedimentos</li>
+                  <li><span>✔️</span> Suporte 24/7</li>
+              </ul>
+          </div>
+      </div>
+
+      <div class="card">
+          <div class="card-header">
+              <img src="assets/img/coracao.svg" alt="Icone de coração">
+              <h3>Avançado</h3>
+          </div>
+          <div class="card-body">
+              <p>Serviços adicionais para quem precisa de acompanhamento especializado.</p>
+              <h4>R$ 399</h4>
+              <span>Por Mês</span>
+              <p>Inclui todos os benefícios do plano básico, além de consultas com especialistas.</p>
+              <a href="#" class="btn">Assine Agora</a>
+              <ul class="features">
+                  <li><span>✔️</span> Consultas ilimitadas</li>
+                  <li><span>✔️</span> Exames avançados</li>
+                  <li><span>✔️</span> Acompanhamento com especialistas</li>
+                  <li><span>✔️</span> Suporte VIP 24/7</li>
+              </ul>
+          </div>
+      </div>
+
+      <div class="card">
+          <div class="card-header">
+              <img src="assets/img/coracao.svg" alt="Icone de coração">
+              <h3>Premium</h3>
+              <span class="badge-new">Novo</span>
+          </div>
+          <div class="card-body">
+              <p>Para quem busca o mais alto nível de atendimento médico.</p>
+              <h4>R$ 699</h4>
+              <span>Por Mês</span>
+              <p>Todos os serviços dos planos anteriores, com prioridade no agendamento e tratamentos exclusivos.</p>
+              <a href="#" class="btn">Assine Agora</a>
+              <ul class="features">
+                  <li><span>✔️</span> Consultas ilimitadas</li>
+                  <li><span>✔️</span> Exames e procedimentos avançados</li>
+                  <li><span>✔️</span> Acesso a tratamentos exclusivos</li>
+                  <li><span>✔️</span> Prioridade no atendimento</li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="testimonials-section">
+  <div class="header-content">
+      <h2>O que nossos pacientes dizem</h2>
+      <p>Confira os depoimentos de quem já confiou na Clínica Saúde & Vida para cuidar da sua saúde.</p>
+  </div>
+  <div class="testimonials-cards">
+      <div class="testimonial-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>A Clínica Saúde & Vida me proporcionou um atendimento excelente, com profissionais dedicados e um ambiente acolhedor.</p>
+          <div class="user-info">
+              <img src="https://via.placeholder.com/50" alt="Foto de Regina Miles">
+              <div>
+                  <h4>Regina Miles</h4>
+                  <span>Designer</span>
+              </div>
+          </div>
+      </div>
+      <div class="testimonial-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>O atendimento foi rápido e eficiente, com diagnósticos precisos e tratamentos eficazes. Recomendo a todos.</p>
+          <div class="user-info">
+              <img src="https://via.placeholder.com/50" alt="Foto de João Silva">
+              <div>
+                  <h4>João Silva</h4>
+                  <span>Engenheiro</span>
+              </div>
+          </div>
+      </div>
+      <div class="testimonial-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>Profissionais altamente qualificados e uma estrutura de ponta. Estou muito satisfeito com os resultados.</p>
+          <div class="user-info">
+              <img src="https://via.placeholder.com/50" alt="Foto de Maria Oliveira">
+              <div>
+                  <h4>Maria Oliveira</h4>
+                  <span>Empresária</span>
+              </div>
+          </div>
+      </div>
+      <div class="testimonial-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>A clínica me ajudou a superar um problema de saúde complicado. Sou grato por todo o apoio e cuidado que recebi.</p>
+          <div class="user-info">
+              <img src="https://via.placeholder.com/50" alt="Foto de Carlos Santos">
+              <div>
+                  <h4>Carlos Santos</h4>
+                  <span>Professor</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="newsletter-section">
+  <h3>Entre em Contato</h3>
+  <h2>FALE COM NOSSOS ESPECIALISTAS</h2>
+  <p>Estamos aqui para ajudar você a encontrar o programa ou serviço ideal para suas necessidades de saúde. </p>
+  <form action="#" class="newsletter-form">
+      <input type="email" placeholder="Seu E-mail" required>
+      <button type="submit">Inscrever-se</button>
+  </form>
+</section>
+
+<footer class="footer">
+  <div class="footer-content">
+      <div class="footer-section">
+          <h4>Informações da Empresa</h4>
+          <p>Sobre Nós</p>
+          <p>Carreiras</p>
+          <p>Trabalhe Conosco</p>
+          <p>Blog</p>
+      </div>
+      <div class="footer-section">
+          <h4>Legal</h4>
+          <p>Política de Privacidade</p>
+          <p>Termos de Serviço</p>
+          <p>Condições de Uso</p>
+          <p>Política de Cookies</p>
+      </div>
+      <div class="footer-section">
+          <h4>Recursos</h4>
+          <p>Central de Ajuda</p>
+          <p>Fale Conosco</p>
+          <p>Suporte ao Cliente</p>
+          <p>Guias e Tutoriais</p>
+      </div>
+      <div class="footer-section">
+          <h4>Contato</h4>
+          <p><i class="fas fa-phone"></i> (11) 4002-8922</p>
+          <p><i class="fas fa-map-marker-alt"></i> Rua Exemplo, 123, São Paulo, SP</p>
+          <p><i class="fas fa-envelope"></i> contato@saudevida.com.br</p>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>© 2024 Clínica Saúde & Vida. Todos os direitos reservados.</p>
+      <div class="social-icons">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+      </div>
+  </div>
+</footer>
 </body>
-
 </html>
