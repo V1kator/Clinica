@@ -683,6 +683,51 @@ header .actions a {
   color: white;
 }
 
+/*Botão subir*/
+
+#btn-topo {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+#btn-topo:hover {
+  background-color: #333;
+}
+
+/* Estilos do pop-up */
+.popup {
+  visibility: hidden;
+  width: 250px;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: fixed;
+  bottom: 20px;
+  right: -300px; /* Posiciona fora da tela à direita */
+  z-index: 1000;
+  transition: right 0.5s ease, visibility 0.5s ease;
+  border-radius: 5px;
+}
+
+.popup.show {
+  visibility: visible;
+  right: 20px; /* Move para a tela */
+}
+
+
 /* Responsividade */
 @media (max-width: 768px) {
   .cards {
