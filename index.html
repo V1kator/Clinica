@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/style/reset.css">
     <link rel="stylesheet" href="assets/style/styles.css">    
     <script src="assets/js/script.js" defer></script>
+    <link rel="icon" href="/assets/img/icons/logo.jpg">
 </head>
 
 <body>
@@ -18,6 +19,8 @@
           <a href="#servico">Serviços</a>
           <a href="#preco">Preços</a>
           <a href="#contato">Contato</a>
+          <a href="#sobre-nos">Sobre-nós</a>
+          <a href="#dicas">Dicas</a>
       </nav>
   </header>
 
@@ -83,6 +86,44 @@
         </div>
     </div>
   </section>
+
+  <section class="health-section" id="dicas">
+    <h2>Dicas de Saúde</h2>
+    <p>Manter um estilo de vida saudável é essencial para garantir bem-estar e longevidade. Veja algumas dicas importantes:</p>
+    <div class="cards">
+        <div class="card">
+            <img src="assets/img/icons/salada.png" alt="Ícone de alimentação balanceada">
+            <h3>Alimentação Balanceada</h3>
+            <div class="underline"></div>
+            <p>Consuma alimentos ricos em nutrientes e evite excessos.</p>
+        </div>
+        <div class="card">
+            <img src="assets/img/icons/exercicio.png" alt="Ícone de exercícios físicos">
+            <h3>Exercícios Físicos</h3>
+            <div class="underline"></div>
+            <p>Pratique atividades físicas regularmente para manter o corpo em forma.</p>
+        </div>
+        <div class="card">
+            <img src="assets/img/icons/garrafa-de-agua.png" alt="Ícone de hidratação">
+            <h3>Hidratação</h3>
+            <div class="underline"></div>
+            <p>Beba bastante água ao longo do dia.</p>
+        </div>
+        <div class="card">
+            <img src="assets/img/icons/disturbio-do-sono.png" alt="Ícone de sono de qualidade">
+            <h3>Sono de Qualidade</h3>
+            <div class="underline"></div>
+            <p>Durma de 7 a 8 horas por noite para garantir um bom descanso.</p>
+        </div>
+        <div class="card">
+            <img src="assets/img/icons/equipe-medica.png" alt="Ícone de check-up médico">
+            <h3>Visitas Regulares ao Médico</h3>
+            <div class="underline"></div>
+            <p>Realize check-ups periódicos para monitorar sua saúde.</p>
+        </div>
+    </div>
+</section>
+
 
 <section class="leading-medicine-section">
   <div class="text-content">
@@ -311,14 +352,24 @@
 </section>
 
 <section class="newsletter-section" id="contato">
-  <h3>Entre em Contato</h3>
-  <h2>FALE COM NOSSOS ESPECIALISTAS</h2>
-  <p>Estamos aqui para ajudar você a encontrar o programa ou serviço ideal para suas necessidades de saúde. </p>
-  <form action="#" class="newsletter-form">
-      <input type="email" placeholder="Seu E-mail" required>
-      <button type="submit">Inscrever-se</button>
-  </form>
+    <h3>Entre em Contato</h3>
+    <h2>FALE COM NOSSOS ESPECIALISTAS</h2>
+    <p>Estamos aqui para ajudar você a encontrar o programa ou serviço ideal para suas necessidades de saúde.</p>
+    <form action="send_email.php" method="POST" class="newsletter-form">
+        <input type="email" name="email" placeholder="Seu E-mail" required>
+        <input type="hidden" name="subject" value="Agradecimento - Clínica Saúde e Vida">
+        <textarea name="body" style="display:none;">
+            <h1>Obrigado pelo contato!</h1>
+            <p>Obrigado por entrar em contato com a Clínica Saúde e Vida. Estamos à disposição para ajudá-lo(a) com suas necessidades de saúde.</p>
+        </textarea>
+        <textarea name="altbody" style="display:none;">
+            Obrigado por entrar em contato com a Clínica Saúde e Vida. Estamos à disposição para ajudá-lo(a) com suas necessidades de saúde.
+        </textarea>
+        <button type="submit" name="send">Inscrever-se</button>
+    </form>
 </section>
+
+
 
 <!-- Pop-up de mensagem -->
 <div id="popup-message" class="popup">

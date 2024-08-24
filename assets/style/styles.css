@@ -761,6 +761,35 @@ header .actions a {
 }
 
 
+.health-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #ffffff;
+}
+
+.health-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.health-section p {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.underline {
+  height: 4px;
+  width: 50px;
+  background-color: #333;
+  margin: 10px 0;
+}
 
 
 /* Responsividade */
